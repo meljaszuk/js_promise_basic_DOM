@@ -1,0 +1,2 @@
+var e=document.querySelector("body"),t=document.querySelector(".logo"),n=new Promise(function(e){t.addEventListener("click",function(){e()})}),o=new Promise(function(e,t){setTimeout(function(){t(Error)},3e3)}),r=function(){var t=document.createElement("div");t.classList="message",t.textContent="Promise was resolved!",e.append(t)},c=function(){var t=document.createElement("div");t.classList="error-message",t.textContent="Promise was rejected!",e.append(t)};n.then(r,c),o.then(r,c);
+//# sourceMappingURL=index.91884fab.js.map
